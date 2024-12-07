@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  /* border: 1px solid black; */
+  scroll-behavior: smooth;
+}
+
+@layer {
+
+  * {
+    @apply font-jakarta;
+  }
+
+  .container-custom {
+    @apply container mx-auto !w-[90vw] 2xl:w-[70vw];
+  }
+
+  .rotate-animation {
+    animation: rotate 4s linear infinite;
+  }
+
+  .star-animation {
+    animation: blink 1.5s infinite alternate;
+  }
+
+  .up-down-animation {
+    animation: moveUpDown 2s ease-in-out infinite;
+  }
+
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1; /* Fully visible */
+    transform: scale(1); /* Normal size */
+  }
+  50% {
+    opacity: 0.5; /* Dimmed */
+    transform: scale(0.9); /* Slightly smaller */
+  }
+  100% {
+    opacity: 1; /* Fully visible */
+    transform: scale(1); /* Back to normal size */
+  }
+}
+
+@keyframes moveUpDown {
+  0% {
+    transform: translateY(0); /* Start at original position */
+  }
+  50% {
+    transform: translateY(5px); 
+  }
+  100% {
+    transform: translateY(0); /* Return to original position */
+  }
+}
