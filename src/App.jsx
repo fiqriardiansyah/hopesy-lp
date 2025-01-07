@@ -42,6 +42,7 @@ import sheetSvg from './assets/sheet.svg';
 import cursorSvg from './assets/cursor.svg';  
 import starPinSvg from './assets/star-pin.svg';
 import storeSvg from './assets/store.svg';
+import { useForm } from '@formspree/react';
 
 const brands = [
   { img: Brand1, title: "Buzzing", desc: "Lorem ipsum dolor sit amet consectetur. Turpis id pulvinar" },
@@ -82,6 +83,9 @@ function App() {
   const navBgRef = useRef();
   const [showMenu, setShowMenu] = useState(false);
 
+  // email to arman@hopesy.co.id
+  const [state, handleSubmit] = useForm("mgvvpqok");
+
   useEffect(() => {
 
     if(!navBgRef.current) return;
@@ -105,7 +109,7 @@ function App() {
   const onCLickLink = () => {
     onClickMenu();
   }
- 
+
   return (
     <Controller> 
       <Helmet>
@@ -221,12 +225,12 @@ function App() {
                         totalProgress={progress}
                         paused
                     >
-                        <img src={BrandPerformPng} className="h-[300px] absolute bottom-0 transform z-20  left-[10%]" alt="" />
+                        <img src={BrandPerformPng} className="h-[300px] absolute bottom-[100px] transform z-20  left-[10%]" alt="" />
                     </Tween>    
                 )}
             </Scene>
           </div>
-          <div className="flex-1 h-full flex flex-col gap-6 relative min-h-screen py-20">
+          <div className="flex-1 h-full flex flex-col gap-6 relative min-h-screen justify-center py-20">
             <img src={StarLinkSvg} className='h-[80%] pointer-events-none object-cover absolute top-1/2 -translate-x-1/2 -translate-y-1/2 left-1/2 transform' alt="" />
             <p className="m-0 text-primary-pink font-semibold">Who We Are</p>
             <p className="m-0 text-4xl font-semibold">A Platform-first community creative agency.</p>
@@ -259,10 +263,10 @@ function App() {
             </div>
             <p className='flex-1 text-white text-sm font-light'>Lorem ipsum dolor sit amet consectetur. Turpis id pulvinar egestas ac sollicitudin urna faucibus in a. Tristique a eleifend</p>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-10">
+          <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 md:gap-10">
             {whatwedoitems.map((element, i) => (
-              <div className="bg-dark rounded-lg p-3 md:p-7 flex flex-col gap-3 group hover:rotate-3 hover:scale-90 transition-all duration-150" key={i}>
-                <img src={element.img} alt="" className='w-10 group-hover:scale-150 duration-150 transition-all' />
+              <div className="bg-dark rounded-lg p-3 md:p-7 lg:p-10 flex flex-col gap-3 group hover:rotate-3 hover:scale-90 transition-all duration-150" key={i}>
+                <img src={element.img} alt="" className='w-10 group-hover:scale-150 lg:w-[70px] duration-150 transition-all' />
                 <p className="m-0 text-primary-pink text-xl font-semibold">{element.title}</p>
                 <p className="m-0 text-white opacity-75 text-sm">{element.desc}</p>
               </div>
@@ -274,14 +278,14 @@ function App() {
         <div className="container-custom flex flex-col items-center gap-10">
           <p className="m-0 text-primary-pink text-xl font-semibold">Our Client</p>
           <p className="m-0 text-dark sm:text-2xl lg:text-4xl text-center font-semibold">We've partnered with many Brand to deliver insights and solutions to their problems with big data</p>
-          <div className="flex flex-wrap gap-10 justify-center">
+          <div className="flex flex-wrap gap-20 justify-center mt-10">
             {clients.map((client, i) => (
-              <img src={client.img} key={i} className=" transition-all w-auto object-contain duration-300" alt={client.name} />
+              <img src={client.img} key={i} className=" transition-all w-auto object-contain duration-300 grayscale hover:grayscale-0" alt={client.name} />
             ))}
           </div>
         </div>
       </section>
-      <section style={{ filter: showMenu ? "grayscale(1)" : "" }} className='transition duration-300 w-full py-14 bg-white' id='our-brand'>
+      {/* <section style={{ filter: showMenu ? "grayscale(1)" : "" }} className='transition duration-300 w-full py-14 bg-white' id='our-brand'>
         <div className="container-custom flex flex-col items-start gap-7">
           <p className="m-0 text-primary-pink text-xl font-bold">Our Brand</p>
           <p className="m-0 text-dark text-2xl text-center font-semibold">Several Brand that we have</p>
@@ -295,7 +299,7 @@ function App() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
       <section style={{ filter: showMenu ? "grayscale(1)" : "" }} className='transition duration-300 w-full py-14 relative overflow-hidden' id='contact'>
         <img src={BgContactPng} className='w-full h-full bg-cover absolute top-0 left-0 z-0' alt="" />
         <div className="w-full md:w-[70%] h-full bg-[#910068] bg-opacity-50 absolute top-0 left-0 z-10">
@@ -305,15 +309,17 @@ function App() {
             <div className="flex-2 flex flex-col gap-7">
               <p className="m-0 text-white font-semibold text-4xl">Contact Us</p>
               <p className="m-0 text-white font-light">Whether you have a request, a query, or want to work with us, use the form below to get in touch with our team.</p>
-              <form action="" className='grid grid-cols-2 sm:grid-cols-3 gap-7'>
-                <input type="text" className='bg-white bg-opacity-55 rounded-lg text-dark placeholder:text-white py-2 px-4' placeholder='Full Name' />
-                <input type="text" className='bg-white bg-opacity-55 rounded-lg text-dark placeholder:text-white py-2 px-4' placeholder='Phone Number' />
-                <input type="email" className='bg-white bg-opacity-55 rounded-lg text-dark placeholder:text-white py-2 px-4' placeholder='Email' />
-                <textarea className='bg-white bg-opacity-55 rounded-lg text-dark placeholder:text-white py-2 px-4 col-span-2 sm:col-span-3' rows={6} placeholder='Enter message here' />
+              <form onSubmit={handleSubmit} className='grid grid-cols-2 sm:grid-cols-3 gap-7'>
+                <input required type="text" name="fullname" className='bg-white bg-opacity-55 rounded-lg text-dark placeholder:text-white py-2 px-4' placeholder='Full Name' />
+                <input required type="text" name="phone number" className='bg-white bg-opacity-55 rounded-lg text-dark placeholder:text-white py-2 px-4' placeholder='Phone Number' />
+                <input required type="email" name="email" className='bg-white bg-opacity-55 rounded-lg text-dark placeholder:text-white py-2 px-4' placeholder='Email' />
+                <textarea required name="message" className='bg-white bg-opacity-55 rounded-lg text-dark placeholder:text-white py-2 px-4 col-span-2 sm:col-span-3' rows={6} placeholder='Enter message here' />
                 <div className="col-span-2 sm:col-span-3 flex justify-end">
-                <button className=' hover:bg-black  transition-all duration-200 flex items-center rounded-md border border-solid border-white px-4 py-2 text-white w-fit'>
+                {state.succeeded ? <p className='text-white font-bold'>Success sending your form 🔥</p> : state.submitting ? <p className='text-white font-bold'>Sending...</p> : (
+                  <button type='submit' className=' hover:bg-black  transition-all duration-200 flex items-center rounded-md border border-solid border-white px-4 py-2 text-white w-fit'>
                   SEND <img src={ArrowUpRight} alt="" className='' />
                 </button>
+                ) }
                 </div>
               </form>
             </div>
