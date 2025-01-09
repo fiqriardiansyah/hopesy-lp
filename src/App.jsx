@@ -265,8 +265,8 @@ function App() {
           </div>
           <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 md:gap-10">
             {whatwedoitems.map((element, i) => (
-              <div className="bg-dark rounded-lg p-3 md:p-7 lg:p-10 flex flex-col gap-3 group hover:rotate-3 hover:scale-90 transition-all duration-150" key={i}>
-                <img src={element.img} alt="" className='w-10 group-hover:scale-150 lg:w-[70px] duration-150 transition-all' />
+              <div className="bg-dark rounded-lg p-3 md:p-7 lg:p-10 flex flex-col gap-3" key={i}>
+                <img src={element.img} alt="" className='w-10 lg:w-[70px]' />
                 <p className="m-0 text-primary-pink text-xl font-semibold">{element.title}</p>
                 <p className="m-0 text-white opacity-75 text-sm">{element.desc}</p>
               </div>
@@ -338,7 +338,14 @@ function App() {
             </div>
             <div className="">
               <p className="m-0 text-black font-bold text-lg mb-5">Location</p>
-              <p className="m-0 text-gray-400 font-light">Gedung Jaya, Jl. M.H. Thamrin No.12 Lantai 5 unit A6, RT.2/RW.1, Kb. Sirih, Kec. Menteng, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10340</p>
+              <p className="m-0 text-gray-400 font-light">
+              Sovereign Plaza Lantai 21 Suite
+              M25, Jalan Tb Simatupang Kavling
+              36, Desa/Kelurahan Cilandak Barat,
+              Kec. Cilandak, Kota Adm. Jakarta
+              Selatan, Provinsi DKI Jakarta
+              Kode Pos: 12430
+              </p>
             </div>
         </div>
       </section>
