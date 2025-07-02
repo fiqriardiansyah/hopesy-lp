@@ -29,6 +29,10 @@ html {
     animation: moveUpDown 2s ease-in-out infinite;
   }
 
+  .customModal {
+    @apply rounded-2xl !max-w-[90vw] xl:!max-w-[70vw] !p-0;
+  }
+
 }
 
 @keyframes rotate {
