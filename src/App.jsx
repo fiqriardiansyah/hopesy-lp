@@ -138,12 +138,40 @@ const slideVariants = {
   exit: { y: '-100%', opacity: 0 },
 };
 
-const successStory = [
+const trustcraftSuccessStory = [
   { title: 'Review & Rating Optimization', desc: 'In just 30 days, a fintech app’s Play Store rating increased from 3.7 to 4.8 through a structured review optimization campaign powered by real users from our verified community.', },
   { title: 'Positive Comment & Social Proof', desc: 'A fintech company boosted ad performance by 2.1× after we deployed 200+ organic, relevant comments under their sponsored content — creating the social validation their audience needed.' },
   { title: 'Reputation Repair', desc: 'A local service app recovered from a series of 1-star reviews, burying them with fresh, verified feedback while deploying clarifying responses — restoring their Play Store score within 3 weeks.', },
   { title: 'Monitoring & Reporting', desc: 'A B2B SaaS platform used our custom dashboard to track sentiment shifts in real-time, discovering that 94% of new feedback post-campaign was positive and actionable.' },
 ];
+
+const pulseSuccessStory = [
+  { title: "UGC Campaigns", desc: "A skincare brand received over 150 testimonial videos from real users in just two weeks — significantly increasing organic engagement and trust across TikTok and Instagram." },
+  { title: "Market Survey & Feedback", desc: "Before launching a new product feature, a fintech app collected over 1,000 inputs from our community survey — helping them fine-tune development and avoid costly missteps." },
+  { title: "Interactive Engagement", desc: "An F&B brand activated IG Stories polls and Q&As to choose their next flavor launch — resulting in a 280% spike in story engagement and stronger product-market fit."},
+  { title: "Niche Influencer Activation", desc: "An EdTech platform onboarded 30+ micro-influencers within campus communities, generating 75+ real content pieces and a 4.2× boost in organic sign-ups."},
+];
+
+const storeBoostSuccessStory = [
+  { title: "App Store Optimization (ASO)", desc: "A financial app jumped into the Top 10 ranking on the Play Store within one week by optimizing keywords, visuals, and user sentiment — all coordinated under our ASO sprint."},
+  { title: "Marketplace Visual & Trust Upgrade", desc: "After redesigning product visuals and boosting positive ratings, a Shopee store doubled its conversion rate and reduced negative reviews by 60% in just 30 days."},
+  { title: "User Acquisition & KYC", desc: "A digital wallet brand gained 10,000+ fully verified users in under a month through our acquisition & KYC onboarding system — with CPA kept under Rp12,000."},
+  { title: "Download & Search Boost", desc: "A lifestyle app ranked on page 1 of Play Store search after a 3-day campaign burst, leading to 3× more organic downloads than their average baseline."},
+];
+
+const trendSuccessStory = [
+  { title: "Trending Hashtag Campaigns", desc: "A national brand reached #1 trending spot on Twitter Indonesia within just 5 hours during Ramadan, leading to a 220% spike in hashtag mentions and thousands of organic conversations in a single day."},
+  { title: "Viral Content Hijack", desc: "A retail client used our TikTok challenge hijack strategy, resulting in 10× higher engagement on their branded reels compared to prior campaigns."},
+  { title: "Engagement Bombing", desc: "By flooding relevant content with real comments and reactions, a mobile app campaign improved ad CTR by 2.3× in just 48 hours."},
+  { title: "Competitor Hijack", desc: "A beauty brand leveraged strategic, positive replies on competitor content to organically grow followers by 140% — without running paid ads."}
+]
+
+const successStories = [
+  { name: 'TrustCraft — Brand Trust & Reputation Engine', stories: trustcraftSuccessStory },
+  { name: 'PulseUCG — User Generated Content & Community Insight', stories: pulseSuccessStory },
+  { name: 'StoreBoost — Marketplace & App Store Optimization', stories: storeBoostSuccessStory },
+  { name: 'TrendCampaign — Viral & Trending Strategy', stories: trendSuccessStory }
+]
 
 const responsive = {
   a: {
@@ -178,31 +206,127 @@ const responsive = {
 
 const cities = ['Jabodetabek', 'Semarang', 'Pekanbaru', 'Yogyakarta', 'Surabaya', 'Padang', 'Bandung', 'Medan', 'Makassar', 'Palembang', 'Malang'];
 
-const services = [
+const trustcraftServices = [
   {
-    number: "01",
     title: "Review & Rating Optimization",
     description:
       "Gain more positive ratings and real user reviews for apps, online stores, or local businesses.",
   },
   {
-    number: "02",
     title: "Positive Comment & Social Proof",
     description:
       "Add relevant, authentic comments to your content, ads, and social platforms to build trust.",
   },
   {
-    number: "03",
     title: "Reputation Repair",
     description:
       "Bury negative reviews with new, positive feedback, clarify through comments, and deploy “defense” strategies.",
   },
   {
-    number: "04",
     title: "Monitoring & Reporting",
     description:
       "Track your rating changes and feedback, receive real-time reports so you know the campaign’s true impact.",
   },
+];
+
+const storeBoostServices = [
+  {
+    title: "APP STORE OPTIMIZATION (ASO)",
+    description: "Optimize keywords, ratings, reviews, visuals, and boost your search/downloads",
+  }, 
+  {
+    title: "Marketplace Visual & Trust Upgrade",
+    description: "Improve product/store visuals, copy, layout, and increase positive reviews & ratings",
+  },
+  {
+    title: "User Acquisition & KYC",
+    description: "Attract and onboard new users, including KYC if required",
+  },
+  {
+    title: "Download & Search Boost",
+    description: "Push your store/app to higher ranks and trending spots through campaign-based strategies",
+  }
+]
+
+const pulseucgServices = [
+  {
+    title: "UGC Campaigns",
+    description: "Community users create video testimonials, reviews, tutorials, and unboxings, then share them across social channels",
+  },
+  {
+    title: "Market Survey & Feedback",
+    description: "Collect insights, preferences, and product validation via community-based surveys",
+  },
+  {
+    title: "Interactive Engagement",
+    description: "Activate polls, Q&As, or lively discussions on IG Stories, TikTok, WhatsApp, etc",
+  },
+  {
+    title: "Niche Influencer Activation",
+    description: "Mobilize relatable micro-influencers—trusted voices within your target audience"
+  }
+]
+
+const trendCampaignServices = [
+  {
+    title: "Trending Hashtag Campaigns",
+    description: "Boost brand hashtags to trend on Twitter/TikTok",
+  },
+  {
+    title: "Viral Content Hijack",
+    description: "Leverage viral sounds, formats, and effects so your brand rides the hottest trends (challenges, Reels, IG Stories, etc)",
+  },
+  {
+    title: "Engagement Bombing",
+    description: "Flood your content with thousands of comments, shares, and likes to trigger social algorithms",
+  },
+  {
+    title: "Competitor Hijack",
+    description: "Smart, positive engagement on competitor content to capture their audience",
+  },
+]
+
+const trustCraftContent = {
+  title: "TrustCraft: Brand Trust & Reputation Engine",
+  desc: "TrustCraft helps your brand build digital trust by increasing ratings, positive reviews, and authentic comments. We focus on managing your reputation across key platforms (Google, Play Store, marketplaces, social media) so your brand appears more credible and attractive to real customers.",
+  sample1: "Client’s app rating improved from 3.6 to 4.5 on the Play Store in 30 days",
+  sample2: "Shopee store shifted from several 1-star reviews to a majority of 4–5 star positive reviews and trusted comments.",
+  industries: "Finance, E-commerce, FMCG, Technology, Healthcare, Telco, Education, Media",
+  price: "2,500,000"
+};
+
+const storeBoostContent = {
+  title: "StoreBoost: Marketplace & App Store Optimization",
+  desc: "StoreBoost ensures your app or online store is easy to find and trusted by your target users. We boost visibility, conversions, and presentation on marketplaces and app stores",
+  sample1: "Client’s app reached Top 10 trending in Play Store’s Finance category",
+  sample2: "Online store doubled positive reviews, saw increased conversions after marketplace upgrades",
+  industries: "E-commerce, Technology, Finance, Retail, Education, Telco",
+  price: "2,500,000"
+};
+
+const trendCampaignContent = {
+  title: "TrendCampaign: Viral & Trending Strategy",
+  desc: "TrendCampaign puts your brand at the center of digital conversations—on Twitter, TikTok, and Instagram. We drive trending campaigns, viral hashtags, and creative content hijacks",
+  sample1: "Ramadan campaign trended on Twitter within 3 hours",
+  sample2: "Reels content for a client hit 5x normal reach in just two days via viral effect",
+  industries: "FMCG, Technology, Finance, Entertainment, Media, Skincare, Education",
+  price: "3,000,000"
+};
+
+const pulseucgContent = {
+  title: "PulseUCG: User Generated Content & Community Insight",
+  desc: "PulseUCG activates real communities to create authentic content for your brand: videos, photos, testimonials, comments, polls, Q&As—even market surveys. This content builds far more trust than paid ads or traditional endorsements",
+  sample1: "Skincare brand received 150+ genuine video testimonials on TikTok & Instagram within two weeks",
+  sample2: "Community survey helped validate new features for a fintech app before launch",
+  industries: "FMCG, Skincare, Finance, Technology, E-commerce, Education, Lifestyle",
+  price: "4,000,000"
+};
+
+const detailServices = [
+  { title: 'TRUSTCRAFT', list: trustcraftServices, content: trustCraftContent },
+  { title: 'STOREBOOST', list: storeBoostServices, content: storeBoostContent },
+  { title: 'TRENDCAMPAIGN', list: trendCampaignServices, content: trendCampaignContent },
+  { title: 'REPUTATION MANAGEMENT', list: pulseucgServices, content: pulseucgContent },
 ];
 
 function App() {
@@ -210,8 +334,14 @@ function App() {
   const [showMenu, setShowMenu] = useState(false);
   const [index, setIndex] = useState(0);
   const [open, setOpen] = useState(false);
+  const [detailService, setDetailService] = useState(null);
+  const [successStory, setSuccessStory] = useState(successStories[0].name);
 
-  const onOpenModal = () => setOpen(true);
+  const onOpenModal = (item) => {
+    const detail = detailServices.find((i) => i.title === item.title);
+    setDetailService(detail);
+    setOpen(true);
+  };
   const onCloseModal = () => setOpen(false);
 
   useEffect(() => {
@@ -275,60 +405,51 @@ function App() {
             <h2 className=" font-bold text-lg">Our Services</h2>
             <div className="flex gap-10 flex-col lg:flex-row">
               <div className="flex-1">
-                <h1 className="text-xl font-bold mt-2 uppercase">TrustCraft: Brand Trust & Reputation Engine</h1>
+                <h1 className="text-xl font-bold mt-2 uppercase">{detailService?.content?.title}</h1>
               </div>
               <div className="flex-2">
-                <p className="mx-auto">
-                  TrustCraft helps your brand build digital trust by increasing ratings, positive reviews,
-                  and authentic comments. We focus on managing your reputation across key platforms
-                  (Google, Play Store, marketplaces, social media) so your brand appears more credible and
-                  attractive to real customers.
-                </p>
+                <p className="mx-auto">{detailService?.content?.desc}</p>
               </div>
             </div>
           </div>
-
           <div className="w-full h-[2px] bg-gray-200 my-5"></div>
-
           <div className='p-10'>
             <h3 className="text-2xl font-bold text-center mb-6 uppercase">What We Do</h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-              {services.map((service) => (
+              {detailService?.list?.map((service, i) => (
                 <div key={service.number} className="bg-[#2D2D2D] text-white p-6 rounded-lg shadow-md relative">
                   <img src={WhatWeDoBg} className='w-full h-full absolute z-0 opacity-20 top-0 left-0' alt="" />
-                  <h4 className="text-[#C4008D] font-bold text-3xl mb-2 uppercase">{service.number}</h4>
+                  <h4 className="text-[#C4008D] font-bold text-3xl mb-2 uppercase">0{i + 1}</h4>
                   <h5 className="font-bold text-lg mb-2 uppercase">{service.title}</h5>
                   <p className="text-sm font-light">{service.description}</p>
                 </div>
               ))}
             </div>
           </div>
-
           <div className="w-full p-10 flex flex-col gap-10">
             <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-7">
               <p className='text-3xl font-bold w-[300px]'>SAMPLE IMPLEMENTATION</p>
               <div className="flex flex-1 flex-col gap-5">
                 <img src={AnalyticsLine} className="w-[60px]" alt="" />
-                <p className='font-light'>Client’s app rating improved from 3.6 to 4.5 on the Play Store in 30 days</p>
+                <p className='font-light'>{detailService?.content?.sample1}</p>
               </div>
               <div className="flex flex-1 flex-col gap-5">
                 <img src={StarLine} className="w-[60px]" alt="" />
-                <p className='font-light'>Shopee store shifted from several 1-star reviews to a majority of 4–5 star positive reviews and trusted comments.</p>
+                <p className='font-light'>{detailService?.content?.sample2}</p>
               </div>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-7">
               <p className='text-3xl font-bold uppercase w-[300px]'>Industries <br /> Served</p>
               <div className="flex flex-col gap-5 flex-1">
                 <img src={FinanceLine} className="w-[60px]" alt="" />
-                <p className='font-light'>Finance, E-commerce, FMCG, Technology, Healthcare, Telco, Education, Media</p>
+                <p className='font-light'>{detailService?.content?.industries}</p>
               </div>
             </div>
           </div>
-
           <div className="bg-gradient-to-r from-pink-700 lg:items-center flex-col lg:flex-row gap-5 to-pink-500 w-full flex text-white py-6 mt-12 px-6 justify-between">
             <h4 className="text-2xl font-semibold uppercase">Pricing</h4>
             <div className="">
-               <p className="text-3xl font-bold mt-1"><span className='text-base font-normal'>Starts from </span>RP2,500,000<span className="text-base font-normal">/month</span></p>
+               <p className="text-3xl font-bold mt-1"><span className='text-base font-normal'>Starts from </span>{detailService?.content?.price}<span className="text-base font-normal">/month</span></p>
                 <p className="text-sm mt-1 text-end">*customizable for your needs</p>
             </div>
           </div>
@@ -401,7 +522,7 @@ function App() {
               <div className="relative flex flex-col">
                 <img src={FlowerSvg} alt="" className="absolute hidden md:block z-10 -right-10 -top-10 rotate-animation" />
                 <img src={StarSvg} alt="" className="absolute hidden md:block star-animation top-1/2 -left-20" />
-                <h1 className='text-white font-bold text-center xl:whitespace-nowrap text-6xl'>MARKETING FOR THE TRUST ERA</h1>
+                <h1 className='text-white text-center xl:whitespace-nowrap text-8xl font-bebas'>MARKETING FOR THE TRUST ERA</h1>
                 <div className="overflow-y-hidden h-[150px] lg:h-[100px] w-full relative mt-8 self-center">
                   <AnimatePresence mode="wait">
                     <motion.div
@@ -433,39 +554,39 @@ function App() {
       <section style={{ filter: showMenu ? "grayscale(1)" : "" }} className='transition duration-300 w-full bg-white min-h-screen' id='who-are-we'>
         <div className="flex h-full container-custom items-center">
           <div className="flex-1 relative min-h-screen hidden md:block">
-            <img src={Group1} alt="" />
+            <img src={Group1} alt="" className="sticky top-20" />
           </div>
           <div className="flex-1 h-full flex flex-col gap-6 relative min-h-screen justify-center py-20">
             {/* <img src={StarLinkSvg} className='h-[80%] pointer-events-none object-cover absolute top-1/2 -translate-x-1/2 -translate-y-1/2 left-1/2 transform' alt="" /> */}
             <p className="m-0 text-primary-pink font-semibold">Who We Are</p>
-            <p className="m-0 text-4xl font-semibold uppercase">Hopesy is a trust-first marketing agency powered by real communities.</p>
+            <p className="m-0 text-6xl uppercase font-bebas">Hopesy is a trust-first marketing agency powered by real communities.</p>
             <p className="m-0 font-light">With 500,000+ active users and 100+ national brands, we don’t just help brands get seen — we help them get believed.</p>
-            <p className="m-0 text-2xl mt-10 font-semibold uppercase">OUR MISSION</p>
+            <p className="m-0 text-4xl mt-10 font-bebas uppercase">OUR MISSION</p>
             <p className="m-0 font-light">To turn real trust into lasting growth. Because in today’s world, attention is cheap — but belief is priceless.</p>
             <div className="grid grid-cols-2 gap-8 text-center mt-10">
               <div className='flex flex-col justify-start items-start text-start'>
-                <h2 className="text-pink-600 text-4xl font-bold">500,000+</h2>
+                <h2 className="text-pink-600 text-6xl font-bebas">500,000+</h2>
                 <h3 className="text-lg font-semibold mt-2">Community Users</h3>
                 <p className="text-sm text-gray-600 mt-1">
                   500,000+ community users engaged in impactful campaigns and events.
                 </p>
               </div>
               <div className='flex flex-col justify-start items-start text-start'>
-                <h2 className="text-pink-600 text-4xl font-bold">100+</h2>
+                <h2 className="text-pink-600 text-6xl font-bebas">100+</h2>
                 <h3 className="text-lg font-semibold mt-2">Clients</h3>
                 <p className="text-sm text-gray-600 mt-1">
                   100+ satisfied clients across various industries, from startups to established brands.
                 </p>
               </div>
               <div className='flex flex-col justify-start items-start text-start'>
-                <h2 className="text-pink-600 text-4xl font-bold">98%</h2>
+                <h2 className="text-pink-600 text-6xl font-bebas">98%</h2>
                 <h3 className="text-lg font-semibold mt-2">Trust Score/Testimonial</h3>
                 <p className="text-sm text-gray-600 mt-1">
                   98% of our clients report a significant increase in brand visibility and engagement within the first three months.
                 </p>
               </div>
               <div className='flex flex-col justify-start items-start text-start'>
-                <h2 className="text-pink-600 text-4xl font-bold">150%</h2>
+                <h2 className="text-pink-600 text-6xl font-bebas">150%</h2>
                 <h3 className="text-lg font-semibold mt-2">Average Engagement Growth</h3>
                 <p className="text-sm text-gray-600 mt-1">
                   Successfully increased client engagement by an average of 150% through tailored campaigns.
@@ -475,16 +596,17 @@ function App() {
           </div>
         </div>
         <div className="container-custom mt-10 mb-20">
-          <h2 className="text-3xl font-extrabold text-center text-black mb-12">
+          <h2 className="text-6xl font-bebas text-center text-black mb-12">
             WHAT MAKES HOPESY DIFFERENT
           </h2>
           <div className="mx-auto grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {hopesyDifferent.map((item, i) => (
-              <div key={i} className="bg-[#2D2D2D] text-white p-6 rounded-xl text-start">
+              <div key={i} className="bg-[#2D2D2D] text-white p-6 flex flex-col rounded-xl text-start">
                 <img src={item.img} alt="" className='w-[40px] mb-5' />
                 <p className="text-sm mb-4">{item.text1}</p>
+                <div className="flex-1"></div>
                 <hr className="border-pink-500 my-5" />
-                <h3 className="text-sm font-bold tracking-wider uppercase">{item.text2}</h3>
+                <h3 className="text-2xl font-bebas tracking-wider uppercase h-[70px]">{item.text2}</h3>
               </div>
             ))}
           </div>
@@ -493,7 +615,7 @@ function App() {
       <section className='relative bg-gradient-to-b from-[#E13CB3] to-[#5E0043]'>
         <img src={Abstract} className='w-full h-full absolute top-0 left-0 opacity-20' alt="" />
         <div className="container-custom py-20 z-10">
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white text-center mb-12">
+          <h2 className="text-3xl sm:text-5xl font-bebas text-white text-center mb-12">
             THE TRUST ADVANTAGE: WHY LEADING BRANDS WIN WITH TRUST
           </h2>
           <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -523,7 +645,7 @@ function App() {
           <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-8 items-start justify-between">
             
             <div className="flex-1">
-              <h2 className="text-2xl sm:text-3xl font-extrabold text-black mb-2">
+              <h2 className="text-2xl sm:text-5xl font-bebas text-black mb-2">
                 BUT HERE’S THE REAL WIN:
               </h2>
               <p className="text-gray-700 mb-8">With Hopesy, your brand is not just seen—it’s chosen</p>
@@ -547,7 +669,7 @@ function App() {
             </div>
 
             <div className="bg-white shadow-xl rounded-xl h-full p-7 max-w-sm">
-              <h3 className="text-pink-600 font-extrabold text-4xl mb-2">WE SOLVE THE <br /> TRUST GAP</h3>
+              <h3 className="text-pink-600 font-bebas text-5xl mb-2">WE SOLVE THE <br /> TRUST GAP</h3>
               <p className="text-black mb-5">
                 We help you build authentic trust that directly drives your business growth.
               </p>
@@ -559,7 +681,7 @@ function App() {
         <div className="container-custom py-20">
             <div className="flex items-center gap-10 w-full justify-between mb-5">
               <div className="w-[80%]">
-                <h2 className='uppercase text-4xl font-bold'>from stranger to believer - hopesy trust funnel</h2>
+                <h2 className='uppercase text-5xl font-bebas'>from stranger to believer - hopesy trust funnel</h2>
                 <p className='font-light mt-4'>This is the journey every customer goes through — from seeing your product to believing in it. <br /> Hopesy helps you accelerate every stage of this journey.</p>
               </div>
               <div className="flex items-center gap-4">
@@ -580,7 +702,7 @@ function App() {
                   <div className="absolute top-4 right-4 text-4xl font-bold text-[#F700B1] opacity-20 grayscale group-hover:opacity-100 group-hover:grayscale-0 select-none">
                       0{i + 1}
                   </div>
-                  <h3 className="font-bold text-black uppercase text-lg mb-1">{item.text1}</h3>
+                  <h3 className="font-bebas text-black uppercase text-2xl mb-1">{item.text1}</h3>
                   <p className="text-sm text-gray-700 mb-4">{item.text2}</p>
                   <h4 className="font-semibold text-sm mb-1">{item.text3}</h4>
                   <p className="text-sm text-gray-700">{item.text4}</p>
@@ -594,8 +716,8 @@ function App() {
           <div className="container-custom flex flex-col lg:flex-row relative py-20 gap-10">
               <div className="flex-1">
                 <p className="m-0 text-primary-pink text-2xl mb-2 font-semibold">Our Services</p>
-                <p className="m-0 text-white text-7xl font-bold uppercase mb-10 mt-4">
-                  We Do What We Do Best
+                <p className="m-0 text-white text-6xl font-bebas uppercase mb-10 mt-4">
+                  We Do What We <br /> Do Best
                 </p>
                 <p className='flex-1 text-white text-xl font-light'>
                   Marketing For The Trust Era, "People don’t trust ads. People trust people."
@@ -603,15 +725,18 @@ function App() {
               </div>
               <div className="flex-1 grid grid-cols-2 gap-5">
                 {weDoWhatWeDoBest.map((item) => (
-                  <div key={item.title} className="bg-[#2D2D2D99] text-white p-6 rounded-xl w-full max-w-sm">
+                  <div key={item.title} className="bg-[#2D2D2D99] text-white flex flex-col p-6 rounded-xl w-full">
                     <img src={item.img} className='w-10 mb-5' alt="" />
                     <p className="text-sm text-white mb-6 leading-relaxed">{item.desc}</p>
+                    <div className="flex-1"></div>
+                    <div className="flex flex-col">
                     <hr className="border-pink-500 mb-4" />
-                    <h3 className="text-sm font-bold uppercase tracking-widest mb-4">{item.title}</h3>
-                    <button onClick={onOpenModal} className="flex items-center gap-2 text-sm border border-white px-4 py-2 rounded-full hover:bg-white/30 hover:text-white transition">
+                    <h3 className="text-xl font-bebas uppercase tracking-widest mb-4">{item.title}</h3>
+                    <button onClick={() => onOpenModal(item)} className="flex w-fit items-center gap-2 text-sm border border-white px-4 py-2 rounded-full hover:bg-white/30 hover:text-white transition">
                       Detail
                       <img src={ArrowUpRight} alt="" className='' />
                     </button>
+                    </div>
                   </div>
                 ))}
               </div>
@@ -619,59 +744,59 @@ function App() {
       </section>
       <section>
         <div className="container-custom py-20">
-          <h2 className='font-bold text-4xl uppercase mb-10 text-center'>why hopesy outperforms other marketing channels</h2>
+          <h2 className='font-bebas text-5xl uppercase mb-10 text-center'>why hopesy outperforms other marketing channels</h2>
           <div className="overflow-x-auto">
             <table className="min-w-full border border-gray-200 rounded-lg text-sm text-left">
               <thead>
                 <tr>
                   <th className="bg-white p-4 font-bold">Key Criteria</th>
-                  <th className="bg-pink-100 p-4 font-bold">HOPESY</th>
-                  <th className="bg-white p-4 font-bold">INFLUENCER/ ENDORSEMENT</th>
-                  <th className="bg-white p-4 font-bold">PAID ADS</th>
-                  <th className="bg-white p-4 font-bold">FULL-SERVICE AGENCY (A–Z)</th>
-                  <th className="bg-white p-4 font-bold">TV/BILLBOARD</th>
+                  <th className="text-center bg-pink-100 p-4 font-bold">HOPESY</th>
+                  <th className="text-center bg-white p-4 font-bold">INFLUENCER/ ENDORSEMENT</th>
+                  <th className="text-center bg-white p-4 font-bold">PAID ADS</th>
+                  <th className="text-center bg-white p-4 font-bold">FULL-SERVICE AGENCY (A–Z)</th>
+                  <th className="text-center bg-white p-4 font-bold">TV/BILLBOARD</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-gray-200">
                 <tr className="bg-white">
                   <td className="p-4">Conversion Rate</td>
-                  <td className="p-4 bg-pink-50">12–18%</td>
-                  <td className="p-4">2–5%</td>
-                  <td className="p-4">1–3%</td>
-                  <td className="p-4">3–6%</td>
-                  <td className="p-4">&lt;1%</td>
+                  <td className="text-center p-4 bg-pink-50">12–18%</td>
+                  <td className="text-center p-4">2–5%</td>
+                  <td className="text-center p-4">1–3%</td>
+                  <td className="text-center p-4">3–6%</td>
+                  <td className="text-center p-4">&lt;1%</td>
                 </tr>
                 <tr className="bg-gray-50">
                   <td className="p-4">Cost per User (CPA)</td>
-                  <td className="p-4 bg-pink-50">Rp 8K–15K</td>
-                  <td className="p-4">Rp 25K–150K</td>
-                  <td className="p-4">Rp 15K–60K</td>
-                  <td className="p-4">Rp 30K–100K</td>
-                  <td className="p-4">&gt;Rp 100K</td>
+                  <td className="text-center p-4 bg-pink-50">Rp 8K–15K</td>
+                  <td className="text-center p-4">Rp 25K–150K</td>
+                  <td className="text-center p-4">Rp 15K–60K</td>
+                  <td className="text-center p-4">Rp 30K–100K</td>
+                  <td className="text-center p-4">&gt;Rp 100K</td>
                 </tr>
                 <tr className="bg-white">
                   <td className="p-4">Trust Level</td>
-                  <td className="p-4 bg-pink-50">Very High</td>
-                  <td className="p-4">Medium</td>
-                  <td className="p-4">Low</td>
-                  <td className="p-4">Medium</td>
-                  <td className="p-4">Very Low</td>
+                  <td className="text-center p-4 bg-pink-50">Very High</td>
+                  <td className="text-center p-4">Medium</td>
+                  <td className="text-center p-4">Low</td>
+                  <td className="text-center p-4">Medium</td>
+                  <td className="text-center p-4">Very Low</td>
                 </tr>
                 <tr className="bg-gray-50">
                   <td className="p-4">Durability</td>
-                  <td className="p-4 bg-pink-50">Long-Term</td>
-                  <td className="p-4">Short-Term</td>
-                  <td className="p-4">Ends when stopped</td>
-                  <td className="p-4">Medium-Term</td>
-                  <td className="p-4">One-Time Branding</td>
+                  <td className="text-center p-4 bg-pink-50">Long-Term</td>
+                  <td className="text-center p-4">Short-Term</td>
+                  <td className="text-center p-4">Ends when stopped</td>
+                  <td className="text-center p-4">Medium-Term</td>
+                  <td className="text-center p-4">One-Time Branding</td>
                 </tr>
                 <tr className="bg-white">
                   <td className="p-4">Sales Funnel Coverage</td>
-                  <td className="p-4 bg-pink-50">Full Funnel</td>
-                  <td className="p-4">Middle Only</td>
-                  <td className="p-4">Top Only</td>
-                  <td className="p-4">Mid Funnel</td>
-                  <td className="p-4">Awareness Only</td>
+                  <td className="text-center p-4 bg-pink-50">Full Funnel</td>
+                  <td className="text-center p-4">Middle Only</td>
+                  <td className="text-center p-4">Top Only</td>
+                  <td className="text-center p-4">Mid Funnel</td>
+                  <td className="text-center p-4">Awareness Only</td>
                 </tr>
               </tbody>
             </table>
@@ -689,24 +814,20 @@ function App() {
       </section>
       <section>
         <div className="container-custom py-20">
-          <h2 className='font-bold text-4xl uppercase mb-10 text-center'>success story</h2>
+          <h2 className='font-bebas text-7xl uppercase mb-10 text-center'>success story</h2>
           <div className="bg-white rounded-3xl p-7 flex flex-col md:flex-row shadow-2xl gap-10 lg:gap-20">
-            <div className="flex-1">
-              <button className='bg-[#F8E5F3] p-5 rounded-xl text-[#C4008D] font-semibold text-start'>
-                TrustCraft — Brand Trust & Reputation Engine
-              </button>
-              <button className='bg-white p-5 rounded-xl font-light text-start'>
-                PulseUCG — User Generated Content & Community Insight
-              </button>
-              <button className='bg-white p-5 rounded-xl font-light text-start'>
-                StoreBoost — Marketplace & App Store Optimization
-              </button>
-              <button className='bg-white p-5 rounded-xl font-light text-start'>
-                TrendCampaign — Viral & Trending Strategy
-              </button>
+            <div className="flex-1 gap-1 flex-col flex">
+              {successStories.map((s) => (
+                <button 
+                  key={s.name} 
+                  onClick={() => setSuccessStory(s.name)} 
+                  className={`p-5 rounded-xl hover:bg-[#F8E5F3]/20 font-light text-start ${successStory === s.name ? 'text-[#C4008D] bg-[#F8E5F3]' : 'bg-white'}`}>
+                  {s.name}
+                </button>
+              ))}
             </div>
             <div className="flex-3 grid lg:grid-cols-2 gap-5">
-              {successStory.map((item, i) => (
+              {successStories.find((i) => i.name === successStory).stories.map((item, i) => (
                 <div key={i} className="border h-full border-gray-300 rounded-2xl p-6 max-w-lg bg-white relative">
                   <div className="absolute top-0 right-4 text-9xl text-gray-200 select-none z-0">
                     &ldquo;
@@ -724,18 +845,29 @@ function App() {
       <section style={{ filter: showMenu ? "grayscale(1)" : "" }} className='transition duration-300 w-full py-14' id='our-client'>
         <div className="container-custom flex flex-col items-center gap-10">
           <p className="m-0 text-primary-pink text-xl font-semibold">Our Client</p>
-          <p className="m-0 text-dark sm:text-2xl lg:text-4xl text-center font-bold uppercase">
-            We have partnered with many Brands to provide insights and solutions to their problems with big data.
+          <p className="m-0 text-dark sm:text-4xl lg:text-6xl text-center font-bebas uppercase">
+            We have partnered with many Brands to provide insights and solutions.
           </p>
           <div className="bg-gray-200 my-6 h-[3px] w-full"></div>
           <img src={Clients} className='' alt="" />
         </div>
       </section>
       <section className='py-20'>
-        <div className="container-custom flex flex-col md:flex-row gap-10">
-            <div className="flex-1 flex flex-col gap-10">
-              <h2 className='font-bold text-3xl uppercase text-center'>Our Gig Workers are spread throughout Indonesia</h2>
-              <div className="bg-[#FFE9F94D] border border-[#91006833] rounded-xl p-7 flex flex-col gap-5 py-10 h-full justify-center">
+        <div className="container-custom flex flex-col">
+            <h2 className='font-bebas text-5xl uppercase text-center mb-7'>Our Gig Workers are spread throughout Indonesia</h2>
+            <div className="flex gap-10">
+              <div className="flex-1 flex flex-col gap-10">
+                <div className="bg-[#FFE9F94D] border border-[#91006833] rounded-xl p-7 flex gap-5">
+                  <div className="flex-1 flex flex-col items-center gap-7">
+                    <img src={Male} className="w-[70px]" alt="" />
+                    <p className="text-2xl font-semibold text-center">Male</p>
+                  </div>
+                  <div className="flex-1 flex flex-col items-center gap-7">
+                    <img src={Female} className="w-[70px]" alt="" />
+                    <p className="text-2xl font-semibold text-center">Female</p>
+                  </div>
+                </div>
+                <div className="bg-[#FFE9F94D] border border-[#91006833] rounded-xl p-7 flex flex-col gap-5 py-10 h-full justify-center">
                   <div className="w-full flex gap-10 items-center">
                     <p className='whitespace-nowrap w-[200px] m-0'>Umur 18 - 24</p>
                     <div className="rounded-full w-full h-[25px] overflow-hidden">
@@ -759,35 +891,24 @@ function App() {
                     <div className=" rounded-full w-full h-[25px]">
                       <div className="bg-[#F700B1] w-[50%] h-full rounded-full"></div>
                     </div>
+                </div>
+              </div>
+              </div>
+              <div className="flex-3 flex flex-col gap-10">
+                <div className="bg-[#FFE9F94D] border border-[#91006833] rounded-xl p-7 flex flex-col gap-5">
+                  <img src={Indonesia} className='' alt="" />
+                </div>
+                <div className="bg-[#FFE9F94D] border border-[#91006833] rounded-xl p-7 flex flex-row gap-5">
+                  <p className="text-[#C4008D] uppercase font-bebas text-4xl">TOP CITY</p>
+                  <div className="flex-1 flex gap-x-10 flex-wrap">
+                    {cities.map((city) => <p key={city} className="text-lg">{city}</p>)}
                   </div>
               </div>
-            </div>
-            <div className="flex-1 flex-col flex gap-10">
-              <div className="bg-[#FFE9F94D] border border-[#91006833] rounded-xl p-7 flex gap-5">
-                <div className="flex-1 flex flex-col items-center gap-7">
-                  <img src={Male} className="w-[70px]" alt="" />
-                  <p className="text-2xl font-semibold text-center">Male</p>
-                </div>
-                <div className="flex-1 flex flex-col items-center gap-7">
-                  <img src={Female} className="w-[70px]" alt="" />
-                  <p className="text-2xl font-semibold text-center">Female</p>
-                </div>
-              </div>
-              <div className="bg-[#FFE9F94D] border border-[#91006833] rounded-xl p-7 flex flex-col gap-5">
-                <p className="text-[#C4008D] uppercase font-semibold text-2xl">TOP CITY</p>
-                <div className="grid grid-cols-3 gap-2">
-                  {cities.map((city) => <p key={city} className="text-lg">{city}</p>)}
-                </div>
               </div>
             </div>
-        </div>
-        <div className="container-custom mt-10">
-          <div className="bg-[#FFE9F94D] border border-[#91006833] rounded-xl p-7 flex flex-col gap-5">
-            <img src={Indonesia} className='' alt="" />
-          </div>
-        </div>
+            </div>
       </section>
-      <section style={{ filter: showMenu ? "grayscale(1)" : "" }} className='transition duration-300 w-full py-14 bg-white' id='our-brand'>
+      {/* <section style={{ filter: showMenu ? "grayscale(1)" : "" }} className='transition duration-300 w-full py-14 bg-white' id='our-brand'>
         <div className="container-custom flex flex-col items-start">
           <p className="m-0 text-primary-pink text-xl font-bold">Our Brand</p>
           <p className="m-0 text-dark text-3xl text-center uppercase mt-4 font-bold">Several Brand that we have</p>
@@ -801,7 +922,7 @@ function App() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
       <section style={{ filter: showMenu ? "grayscale(1)" : "" }} className='transition duration-300 w-full py-14 relative overflow-hidden' id='contact'>
         <img src={BgContactPng} className='w-full h-full bg-cover absolute top-0 left-0 z-0' alt="" />
         <div className="w-full md:w-[70%] h-full bg-[#910068] bg-opacity-50 absolute top-0 left-0 z-10">
@@ -809,7 +930,7 @@ function App() {
         </div>
         <div className="container-custom flex relative z-20">
             <div className="flex-2 flex flex-col gap-7">
-              <p className="m-0 text-white font-semibold text-4xl">Contact Us</p>
+              <p className="m-0 text-white font-bebas text-6xl">Contact Us</p>
               <p className="m-0 text-white font-light">Whether you have a request, a query, or want to work with us, use the form below to get in touch with our team.</p>
               <form onSubmit={handleSubmit} className='grid grid-cols-2 sm:grid-cols-3 gap-7'>
                 <input required type="text" name="fullname" className='bg-white bg-opacity-55 rounded-lg text-dark placeholder:text-white py-2 px-4' placeholder='Full Name' />
@@ -843,7 +964,9 @@ function App() {
             <div className="">
               <p className="m-0 text-black font-bold text-lg mb-5">Location</p>
               <p className="m-0 text-gray-400 font-light">
-                Gedung Jaya, Jl. M.H. Thamrin No.12 Lantai 5 unit A6, RT.2/RW.1, Kb. Sirih, Kec. Menteng, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10340
+                Sovereign Plaza Lantai 21 Suite M25, Jalan Tb Simatupang Kavling 36, Desa/Kelurahan Cilandak Barat, Kec. Cilandak, Kota Adm. Jakarta
+                Selatan, Provinsi DKI Jakarta
+                Kode Pos: 12430
               </p>
             </div>
         </div>

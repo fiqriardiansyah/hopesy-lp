@@ -35,6 +35,11 @@ html {
 
 }
 
+.font-bebas {
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 3px;
+}
+
 @keyframes rotate {
   from {
     transform: rotate(0deg);
