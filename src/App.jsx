@@ -513,11 +513,11 @@ function App() {
         </nav>
       </header>
       <Scene duration="100%" triggerHook="onLeave" >
-        <Timeline  wrapper={<section style={{ filter: showMenu ? "grayscale(1)" : "" }} className='transition !bg-blue-100 duration-300 w-full h-screen relative' />} >
+        <Timeline wrapper={<section style={{ filter: showMenu ? "grayscale(1)" : "" }} className='transition !bg-blue-100 duration-300 w-full h-screen relative' />} >
           <Tween 
             position="0"
-            from={{ yPercent: -50, xPercent: 0 }}
-            to={{ yPercent: 0, xPercent: 0 }} >
+            from={{ yPercent: -50 }}
+            to={{ yPercent: 0 }} >
             <div className="w-[80%] md:w-auto mx-auto absolute z-20 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
               <div className="relative flex flex-col">
                 <img src={FlowerSvg} alt="" className="absolute hidden md:block z-10 -right-10 -top-10 rotate-animation" />
