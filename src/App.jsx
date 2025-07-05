@@ -37,7 +37,7 @@ import HashSvg from './assets/hash.svg';
 import Head2Png from './assets/head-2.png';
 import HopesyColorSvg from './assets/hopesy-color.svg';
 import Hopesy from './assets/hopesy.svg';
-import JumbotronPng from './assets/jumbotron.png';
+import JumbotronPng from './assets/bg.png';
 import purseSvg from './assets/purse.svg';
 import RocketSvg from './assets/rocket.svg';
 import Setting from './assets/setting.svg';
