@@ -640,7 +640,7 @@ function App() {
           </div>
         </div>
       </section>
-      <section className='bg-gray-50'>
+      {/* <section className='bg-gray-50'>
         <div className="py-16 container-custom">
           <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-8 items-start justify-between">
             
@@ -710,7 +710,7 @@ function App() {
               ))}
             </Carousel>
         </div>
-      </section>
+      </section> */}
       <section id="what-we-do" className='relative bg-[#111111] rounded-t-3xl'>
           <img src={Abstract2} className='w-full h-full absolute top-0 left-0 opacity-5' alt="" />
           <div className="container-custom flex flex-col lg:flex-row relative py-20 gap-10">
@@ -753,7 +753,7 @@ function App() {
                   <th className="text-center bg-pink-100 p-4 font-bold">HOPESY</th>
                   <th className="text-center bg-white p-4 font-bold">INFLUENCER/ ENDORSEMENT</th>
                   <th className="text-center bg-white p-4 font-bold">PAID ADS</th>
-                  <th className="text-center bg-white p-4 font-bold">FULL-SERVICE AGENCY (A–Z)</th>
+                  {/* <th className="text-center bg-white p-4 font-bold">FULL-SERVICE AGENCY (A–Z)</th> */}
                   <th className="text-center bg-white p-4 font-bold">TV/BILLBOARD</th>
                 </tr>
               </thead>
@@ -763,7 +763,7 @@ function App() {
                   <td className="text-center p-4 bg-pink-50">12–18%</td>
                   <td className="text-center p-4">2–5%</td>
                   <td className="text-center p-4">1–3%</td>
-                  <td className="text-center p-4">3–6%</td>
+                  {/* <td className="text-center p-4">3–6%</td> */}
                   <td className="text-center p-4">&lt;1%</td>
                 </tr>
                 <tr className="bg-gray-50">
@@ -771,7 +771,7 @@ function App() {
                   <td className="text-center p-4 bg-pink-50">Rp 8K–15K</td>
                   <td className="text-center p-4">Rp 25K–150K</td>
                   <td className="text-center p-4">Rp 15K–60K</td>
-                  <td className="text-center p-4">Rp 30K–100K</td>
+                  {/* <td className="text-center p-4">Rp 30K–100K</td> */}
                   <td className="text-center p-4">&gt;Rp 100K</td>
                 </tr>
                 <tr className="bg-white">
@@ -779,7 +779,7 @@ function App() {
                   <td className="text-center p-4 bg-pink-50">Very High</td>
                   <td className="text-center p-4">Medium</td>
                   <td className="text-center p-4">Low</td>
-                  <td className="text-center p-4">Medium</td>
+                  {/* <td className="text-center p-4">Medium</td> */}
                   <td className="text-center p-4">Very Low</td>
                 </tr>
                 <tr className="bg-gray-50">
@@ -787,7 +787,7 @@ function App() {
                   <td className="text-center p-4 bg-pink-50">Long-Term</td>
                   <td className="text-center p-4">Short-Term</td>
                   <td className="text-center p-4">Ends when stopped</td>
-                  <td className="text-center p-4">Medium-Term</td>
+                  {/* <td className="text-center p-4">Medium-Term</td> */}
                   <td className="text-center p-4">One-Time Branding</td>
                 </tr>
                 <tr className="bg-white">
@@ -795,7 +795,7 @@ function App() {
                   <td className="text-center p-4 bg-pink-50">Full Funnel</td>
                   <td className="text-center p-4">Middle Only</td>
                   <td className="text-center p-4">Top Only</td>
-                  <td className="text-center p-4">Mid Funnel</td>
+                  {/* <td className="text-center p-4">Mid Funnel</td> */}
                   <td className="text-center p-4">Awareness Only</td>
                 </tr>
               </tbody>
@@ -956,10 +956,8 @@ function App() {
             <img src={HopesyColorSvg} className='h-[60px]' alt="" />
             <div className="">
               <p className="m-0 text-black font-bold text-lg mb-5">Our Contact</p>
-              <a href="mailto:arman@hopesy.co.id" className="m-0 text-gray-400 font-light flex items-center w-fit">
-                <i className="fa-regular fa-envelope mr-2"></i>arman@hopesy.co.id</a>
-              <a href="http://instagram.com/_u/hopesy.id" className="m-0 text-gray-400 font-light flex items-center mb-2 w-fit">
-                <i className="fa-brands fa-instagram mr-2"></i>Hopesy Id</a>
+              <a href="mailto:business@hopesy.co.id" className="m-0 text-gray-400 font-light flex items-center w-fit">
+                <i className="fa-regular fa-envelope mr-2"></i>busniess@hopesy.co.id</a>
             </div>
             <div className="">
               <p className="m-0 text-black font-bold text-lg mb-5">Location</p>
