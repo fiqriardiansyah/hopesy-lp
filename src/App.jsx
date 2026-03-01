@@ -957,12 +957,12 @@ function App() {
             <div className="">
               <p className="m-0 text-black font-bold text-lg mb-5">Our Contact</p>
               <a href="mailto:business@hopesy.co.id" className="m-0 text-gray-400 font-light flex items-center w-fit">
-                <i className="fa-regular fa-envelope mr-2"></i>busniess@hopesy.co.id</a>
+                <i className="fa-regular fa-envelope mr-2"></i>business@hopesy.co.id</a>
             </div>
             <div className="">
               <p className="m-0 text-black font-bold text-lg mb-5">Location</p>
               <p className="m-0 text-gray-400 font-light">
-                Sovereign Plaza Lantai 21 Suite M25, Jalan Tb Simatupang Kavling 36, Desa/Kelurahan Cilandak Barat, Kec. Cilandak, Kota Adm. Jakarta
+                Sovereign Plaza Lantai 21 Suite M25, Jalan Tb Simatupang Kavling 36, Kec. Cilandak, Kota Adm. Jakarta
                 Selatan, Provinsi DKI Jakarta
                 Kode Pos: 12430
               </p>
