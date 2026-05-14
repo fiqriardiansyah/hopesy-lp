@@ -2,20 +2,20 @@
   "name": "hopesy",
   "private": true,
   "version": "0.0.0",
-  "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
     "@formspree/react": "^2.5.1",
     "framer-motion": "^12.19.1",
+    "gsap": "^3.15.0",
+    "next": "^15.3.2",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-gsap": "^3.2.1",
-    "react-helmet": "^6.1.0",
     "react-multi-carousel": "^2.8.6",
     "react-responsive-modal": "^6.4.2",
     "react-scrollmagic": "^2.3.0",
@@ -23,18 +23,12 @@
     "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
-    "@eslint/js": "^9.15.0",
     "@types/react": "^18.3.12",
     "@types/react-dom": "^18.3.1",
-    "@vitejs/plugin-react": "^4.3.4",
     "autoprefixer": "^10.4.20",
     "eslint": "^9.15.0",
-    "eslint-plugin-react": "^7.37.2",
-    "eslint-plugin-react-hooks": "^5.0.0",
-    "eslint-plugin-react-refresh": "^0.4.14",
-    "globals": "^15.12.0",
+    "eslint-config-next": "^15.3.2",
     "postcss": "^8.4.49",
-    "tailwindcss": "^3.4.16",
-    "vite": "^6.0.1"
+    "tailwindcss": "^3.4.16"
   }
 }

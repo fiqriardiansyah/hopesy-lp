@@ -1,13 +1,14 @@
 /** @type {import('tailwindcss').Config} */
-export default {
+module.exports = {
   content: [
-    "./index.html",
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {
       fontFamily: {
-        "jakarta": ["Plus Jakarta Sans", "sans-serif"]
+        "jakarta": ["Plus Jakarta Sans", "sans-serif"],
+        "clash": ["Clash Display", "Cabinet Grotesk", "sans-serif"],
       },
       colors: {
         "primary-pink": "#F700B1",
