@@ -28,7 +28,7 @@ export const metadata = {
     siteName: 'HOPESY',
     images: [
       {
-        url: 'https://i.ibb.co/chCYc8XY/Color-logo-no-background.png',
+        url: '/hopesy.png',
         width: 1200,
         height: 630,
         alt: "HOPESY — Indonesia's Trust Activation Network",
@@ -42,7 +42,7 @@ export const metadata = {
     title: "HOPESY — Indonesia's Trust Activation Network",
     description:
       'Membangun kepercayaan konsumen secara sistematis lewat 500.000 real users terverifikasi dan Trust Score yang terukur.',
-    images: ['https://i.ibb.co/chCYc8XY/Color-logo-no-background.png'],
+    images: ['/hopesy.png'],
   },
   robots: {
     index: true,
@@ -66,7 +66,7 @@ const jsonLd = {
   name: 'HOPESY',
   legalName: 'PT HOPESY SUKSES MAKMUR',
   url: 'https://hopesy.co.id',
-  logo: 'https://i.ibb.co/chCYc8XY/Color-logo-no-background.png',
+  logo: '/hopesy.png',
   description:
     "Indonesia's Trust Activation Network — Membangun kepercayaan konsumen secara sistematis lewat 500.000 real users terverifikasi.",
   foundingDate: '2017',

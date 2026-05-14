@@ -18,7 +18,7 @@ export default function TopBar() {
       <header className={`topbar${scrolled ? ' scrolled' : ''}`}>
         <a className="tb-brand" href="#" onClick={close}>
           <img
-            src="https://i.ibb.co/chCYc8XY/Color-logo-no-background.png"
+            src="/hopesy.png"
             alt="HOPESY"
             style={{ display: 'block', height: '40px' }}
             onError={(e) => {

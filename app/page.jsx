@@ -409,7 +409,7 @@ export default function Page() {
           <div>
             <div className="footer-logo-wrap">
               <img
-                src="https://i.ibb.co/chCYc8XY/Color-logo-no-background.png"
+                src="/hopesy.png"
                 alt="HOPESY"
                 height="28"
                 style={{ display: 'block', filter: 'brightness(0) invert(1)', opacity: 0.8 }}
