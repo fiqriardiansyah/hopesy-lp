@@ -5,26 +5,25 @@ import ServicesSection from './components/ServicesSection'
 import FAQSection from './components/FAQSection'
 import ContactSection from './components/ContactSection'
 
-const LOGO_TOKEN = process.env.NEXT_PUBLIC_LOGO_DEV_TOKEN
-
 const logos = [
-  { txt: 'Disney+',      domain: 'disneyplus.com' },
-  { txt: 'Allianz',      domain: 'allianz.com' },
-  { txt: 'digibank',     domain: 'dbs.com' },
-  { txt: 'tokopedia',    domain: 'tokopedia.com' },
-  { txt: 'XL',           domain: 'xl.co.id' },
-  { txt: 'TMRW',         domain: 'uob.co.id' },
-  { txt: 'HONDA',        domain: 'honda.com' },
-  { txt: 'BTN',          domain: 'btn.co.id' },
-  { txt: 'tokocrypto',   domain: 'tokocrypto.com' },
-  { txt: 'Blu',          domain: 'blubybcadigital.id' },
-  { txt: 'grab',         domain: 'grab.com' },
-  { txt: 'Evalube',      domain: 'evalube.com' },
-  { txt: 'KratingDaeng', domain: 'kratingdaeng.com' },
-  { txt: 'BCA Syariah',  domain: 'bcasyariah.co.id' },
-  { txt: 'Kopi ABC',     domain: 'kopiabc.com' },
-  { txt: 'Free Fire',    domain: 'garena.com' },
-  { txt: 'ajaib',        domain: 'ajaib.co.id' },
+  { txt: 'Disney+',      src: '/brands/disney.png' },
+  { txt: 'Allianz',      src: '/brands/allianz.png' },
+  { txt: 'digibank',     src: '/brands/digibank.png' },
+  { txt: 'tokopedia',    src: '/brands/tokopedia.png' },
+  { txt: 'XL',           src: '/brands/xl.png' },
+  { txt: 'UOB',          src: '/brands/uob.png' },
+  { txt: 'HONDA',        src: '/brands/honda.png' },
+  { txt: 'BTN',          src: '/brands/btn.png' },
+  { txt: 'tokocrypto',   src: '/brands/tokocrypto.png' },
+  { txt: 'Blu',          src: '/brands/blu.png' },
+  { txt: 'grab',         src: '/brands/grab.png' },
+  { txt: 'Evalube',      src: '/brands/evalube.png' },
+  { txt: 'KratingDaeng', src: '/brands/kratindaeng.png' },
+  { txt: 'BCA',          src: '/brands/bca.png' },
+  { txt: 'Wondr',        src: '/brands/wondr.png' },
+  { txt: 'Kopi ABC',     src: '/brands/abc.png' },
+  { txt: 'Free Fire',    src: '/brands/freefire.png' },
+  { txt: 'ajaib',        src: '/brands/ajaib.png' },
 ]
 
 export default function Page() {
@@ -142,11 +141,11 @@ export default function Page() {
         <div className="logos-in">
           <div className="logos-lbl">Dipercaya oleh brand-brand ini</div>
           <div className="logos-grid">
-            {logos.map(({ txt, domain }) => (
+            {logos.map(({ txt, src }) => (
                 <img
                   key={txt}
                   className="logo-item"
-                  src={`https://img.logo.dev/${domain}?token=${LOGO_TOKEN}`}
+                  src={src}
                   alt={txt}
                 />
             ))}
