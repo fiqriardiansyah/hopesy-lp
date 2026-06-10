@@ -4,6 +4,7 @@ import LiveBar from './components/LiveBar'
 import ServicesSection from './components/ServicesSection'
 import FAQSection from './components/FAQSection'
 import ContactSection from './components/ContactSection'
+import BlogPreviewSection from './components/BlogPreviewSection'
 
 const logos = [
   { txt: 'Disney+',      src: '/brands/disney.png' },
@@ -398,6 +399,9 @@ export default function Page() {
           </p>
         </div>
       </div>
+
+      {/* BLOG PREVIEW */}
+      <BlogPreviewSection />
 
       {/* CONTACT */}
       <ContactSection />

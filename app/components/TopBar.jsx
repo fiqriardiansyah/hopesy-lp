@@ -32,6 +32,7 @@ export default function TopBar() {
           <a className="nav-a" href="#layanan">Layanan</a>
           <a className="nav-a" href="#trust-score">Trust Score</a>
           <a className="nav-a" href="#faq">FAQ</a>
+          <a className="nav-a" href="/blog">Blog</a>
           <a
             className="btn-wa"
             href="https://wa.me/6285892758224?text=Halo%20HOPESY%2C%20saya%20ingin%20konsultasi"
@@ -57,6 +58,7 @@ export default function TopBar() {
         <a className="nav-a" href="#layanan" onClick={close}>Layanan</a>
         <a className="nav-a" href="#trust-score" onClick={close}>Trust Score</a>
         <a className="nav-a" href="#faq" onClick={close}>FAQ</a>
+        <a className="nav-a" href="/blog" onClick={close}>Blog</a>
         <a
           className="btn-wa"
           href="https://wa.me/6285892758224?text=Halo%20HOPESY%2C%20saya%20ingin%20konsultasi"
