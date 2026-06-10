@@ -25,6 +25,8 @@ type TrendingPost = {
   readingTime: number
 }
 
+export const revalidate = 60
+
 export const metadata = {
   title: "What's New? — HOPESY Blog",
   description: 'Insights, tips, and stories from the HOPESY team on trust activation and brand growth in Indonesia.',

@@ -36,13 +36,6 @@ function formatDate(dateString: string) {
 
 type Props = { params: Promise<{ slug: string }> }
 
-export async function generateStaticParams() {
-  const slugs = await client.fetch<{ slug: string }[]>(
-    `*[_type == "post"]{ "slug": slug.current }`
-  )
-  return slugs.map((s) => ({ slug: s.slug }))
-}
-
 export async function generateMetadata({ params }: Props) {
   const { slug } = await params
   const post: Post | null = await client.fetch(postBySlugQuery, { slug })
