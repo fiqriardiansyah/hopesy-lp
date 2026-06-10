@@ -82,7 +82,7 @@ export default async function BlogListPage() {
             className="text-5xl font-bold leading-tight"
             style={{ fontFamily: 'var(--fd)', color: '#1a1a1a' }}
           >
-            What's New?
+            What&apos;s New?
           </h1>
         </div>
 
